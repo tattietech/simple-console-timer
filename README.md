@@ -59,11 +59,11 @@ Set hours, minutes, and/or seconds using command-line options:
 
 | Option | Description | Example |
 |--------|-------------|---------|
-| `-h <hours>` | Set hours | `-h 2` |
-| `-m <minutes>` | Set minutes | `-m 25` |
-| `-s <seconds>` | Set seconds | `-s 30` |
+| `-h <hours>` | Set timer hours | `-h 2` |
+| `-m <minutes>` | Set timer minutes | `-m 25` |
+| `-s <seconds>` | Set timer seconds | `-s 30` |
 
-**Note:** All options can be combined in any order.
+**Note:** All options can be combined in any order. The `-h` option sets hours for the timer (not a help command).
 
 ## Examples
 
@@ -86,10 +86,10 @@ Set hours, minutes, and/or seconds using command-line options:
 
 ## How It Works
 
-1. The timer counts down in real-time, updating the display every second
-2. Time is displayed in the format `HH:MM:SS`
-3. When the timer reaches zero, it prints "Timer finished!" 
-4. Three audio beeps are played to notify completion
+1. The timer counts down in real-time, updating the display every second.
+2. Time is displayed in the format `HH:MM:SS`.
+3. When the timer reaches zero, it prints "Timer finished!".
+4. Three audio beeps are played to notify completion.
 
 ## License
 
