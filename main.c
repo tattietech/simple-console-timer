@@ -81,6 +81,12 @@ void print_time(int total_seconds) {
         int m = (total_seconds % 3600) / 60;
         int s = total_seconds % 60;
 
+        // wipes console when going from 100 to 99
+        // to remove trailing 0 
+        if (h == 99 && m == 59 && s == 59) {
+            printf("\r                ");
+        }
+        
         printf("\r%02d:%02d:%02d", h, m, s);
         fflush(stdout);
 }
